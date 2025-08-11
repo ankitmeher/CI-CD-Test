@@ -1,0 +1,14 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run a Multi-line Script
+              run: |
+                echo "This is a multi-line script"
+                echo "Hello World!"
+                echo "Test and deploy your project here"
